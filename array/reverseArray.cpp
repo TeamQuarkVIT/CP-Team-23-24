@@ -7,6 +7,10 @@ void swap(int &a, int &b) {
     b=temp;
 }
 
+
+//time complexity : O(n)
+//space complexity : O(1)
+
 void reverse(vector<int>&A){
     for(int i=0; i<A.size()/2; i++){
         swap(A[i],A[A.size()-1-i]);
