@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+// Find the maximum and minimum element in an arraY
 
 //time complexity : O(n)
 //space complexity : O(1)
