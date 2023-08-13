@@ -2,12 +2,12 @@ class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
         
-        int n = intervals.size();                //number of intervals given
-        sort(intervals.begin(), intervals.end());
+        int n = intervals.size();                        //number of intervals given
+        sort(intervals.begin(), intervals.end());        //sort by interval start
         vector<vector<int>> output;
-        
+            
         for(vector<int> interval : intervals){
-            if(output.empty() || output.back()[1] < interval[0]){
+            if(output.empty() || output.back()[1] < interval[0]){    
                 output.push_back(interval);
             }
             else{
