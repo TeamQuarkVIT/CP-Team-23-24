@@ -1,0 +1,39 @@
+*******Union of two arrays*********
+
+class Solution{
+    public static int doUnion(int a[], int n, int b[], int m) 
+    {
+        //Your code here
+        int max=a[0];
+        for (int i=0;i<n;i++){
+            if(max<a[i]){
+                max=a[i];
+            }
+        }
+        
+        for (int i=0;i<m;i++){
+            if(max<b[i]){
+                max=b[i];
+            }
+        }
+        
+        int []freq=new int[max+1];
+        
+        for (int i=0;i<n;i++){
+            freq[a[i]]++;
+        }
+        
+         for (int i=0;i<m;i++){
+            freq[b[i]]++;
+        }
+        
+        int count=0;
+        
+        for (int i=0;i<max+1;i++){
+            if(freq[i]>0){
+                count++;
+            }
+        }
+        return count;
+    }
+}

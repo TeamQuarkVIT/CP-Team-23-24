@@ -1,0 +1,15 @@
+*********Cyclically rotate an array by one***********
+
+public void rotate(int arr[], int n)
+    {
+        int rotate=arr[n-1];
+        int prenum=arr[0],postnum;
+        for(int i=0;i<n-1;i++){
+           postnum=arr[i+1];
+           arr[i+1]=prenum;
+           prenum=postnum;
+        }
+        arr[0]=rotate;
+        
+        
+    }

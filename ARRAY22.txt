@@ -1,0 +1,30 @@
+****************factorial of largest number**************
+class Solution {
+    static ArrayList<Integer> factorial(int N){
+        //code here
+        ArrayList a=new ArrayList();
+        ArrayList b=new ArrayList();
+        double fact=1;
+        for (int i=1;i<=N;i++){
+            fact=fact*i;
+        }
+        double num=fact;
+        
+        int p=0;
+      while(num>=1){
+           fact=(int)num/10;
+           p=(int)(num-fact*10);
+           num=fact;
+           
+           a.add(p);
+       }
+       
+       
+       for (int i=a.size()-1;i>=0;i--){
+           b.add(a.get(i));
+           
+       }
+        return b;
+        
+    }
+}
