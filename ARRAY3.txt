@@ -1,0 +1,32 @@
+*****kth smallest number******
+
+class Solution{
+    public static int kthSmallest(int[] arr, int l, int r, int k) 
+    { 
+        //Your code here
+        int max=arr[0];
+        for (int i=0;i<=r-l;i++){
+            if(max<arr[i]){
+                max=arr[i];
+            }
+        }
+        
+        int freq[]=new int[max+1];
+        for (int i=0;i<=r-l;i++){
+            freq[arr[i]]++;
+        }
+        
+        int count=0;
+        int i;
+        for (i=0;i<=max;i++){
+            if(freq[i]>0 & count==k-1){
+                break;
+            }
+            if(freq[i]>0){
+                count++;
+            }
+        }
+        
+        return i;
+    } 
+}
