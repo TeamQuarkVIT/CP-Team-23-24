@@ -1,0 +1,25 @@
+***********Sort an array of 0s, 1s and 2s************
+class Solution
+{
+    public static void sort012(int a[], int n)
+    {
+        // code here 
+        int freq[]=new int [3];
+        for (int i=0;i<n;i++){
+            freq[a[i]]++;
+        }
+    
+        int k=0,i=0;
+        
+        while(i<n){
+            if(freq[k]>0 ){
+                a[i]=k;
+                freq[k]--;
+                i++;
+            }else{
+                k++;
+                
+            }
+        }
+    }
+}
