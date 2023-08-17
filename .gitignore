@@ -4,4 +4,4 @@
 
 *.exe
 *.pdf
-.*
+.vscode/
