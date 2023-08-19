@@ -18,7 +18,10 @@
 26SmallestSubarrayWithSumGreaterThanGivenValue.cpp
 27MedianOfTwoSortedNotEqualLength.cpp
 28MedianOfTwoSortedEqualLen.cpp
+29TripleSum.cpp
 2minMaxArray.cpp
+30ElementsAppearingMorethanKtimes.cpp
+31maxprofitAtmost2transaction.cpp
 3kthMinMax.cpp
 4sort012.cpp
 5moveNegativeElements.cpp
@@ -26,4 +29,3 @@
 7rotateArray.cpp
 8largestSubsequenceSum.cpp
 9MinimizeHeightDiff.cpp
-
