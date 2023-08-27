@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "ostream": "cpp",
-        "vector": "cpp",
-        "iostream": "cpp",
-        "xtree": "cpp",
-        "xstring": "cpp"
-    }
-}
